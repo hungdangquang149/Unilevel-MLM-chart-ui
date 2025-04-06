@@ -1,0 +1,403 @@
+{
+  "name": "Jim Rose (CEO)",
+  "attributes": {
+    "age": "67"
+  },
+  "children": [
+    {
+      "name": "Nancy Rose (CFO)",
+      "attributes": {
+        "age": "45",
+        "department": "Finance"
+      },
+      "children": [
+        {
+          "name": "Emily Smith",
+          "attributes": {
+            "age": "38",
+            "role": "Finance Manager"
+          },
+          "children": [
+            {
+              "name": "Emily Smith",
+              "attributes": {
+                "age": "38",
+                "role": "Finance Manager"
+              },
+              "children": [
+                {
+                  "name": "Emily Smith",
+                  "attributes": {
+                    "age": "38",
+                    "role": "Finance Manager"
+                  }
+                },
+                {
+                  "name": "John Doe",
+                  "attributes": {
+                    "age": "35",
+                    "role": "Accountant"
+                  }
+                },
+                {
+                  "name": "Sarah Johnson",
+                  "attributes": {
+                    "age": "29",
+                    "role": "Financial Analyst"
+                  }
+                },
+                {
+                  "name": "Kevin Wilson",
+                  "attributes": {
+                    "age": "41",
+                    "role": "Investment Specialist"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "John Doe",
+              "attributes": {
+                "age": "35",
+                "role": "Accountant"
+              }
+            },
+            {
+              "name": "Sarah Johnson",
+              "attributes": {
+                "age": "29",
+                "role": "Financial Analyst"
+              }
+            },
+            {
+              "name": "Kevin Wilson",
+              "attributes": {
+                "age": "41",
+                "role": "Investment Specialist"
+              }
+            }
+          ]
+        },
+        {
+          "name": "John Doe",
+          "attributes": {
+            "age": "35",
+            "role": "Accountant"
+          },
+          "children": [
+            {
+              "name": "Emily Smith",
+              "attributes": {
+                "age": "38",
+                "role": "Finance Manager"
+              }
+            },
+            {
+              "name": "John Doe",
+              "attributes": {
+                "age": "35",
+                "role": "Accountant"
+              }
+            },
+            {
+              "name": "Sarah Johnson",
+              "attributes": {
+                "age": "29",
+                "role": "Financial Analyst"
+              }
+            },
+            {
+              "name": "Kevin Wilson",
+              "attributes": {
+                "age": "41",
+                "role": "Investment Specialist"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Sarah Johnson",
+          "attributes": {
+            "age": "29",
+            "role": "Financial Analyst"
+          }
+        },
+        {
+          "name": "Kevin Wilson",
+          "attributes": {
+            "age": "41",
+            "role": "Investment Specialist"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Heath Rose (CTO)",
+      "attributes": {
+        "age": "42",
+        "department": "Technology"
+      },
+      "children": [
+        {
+          "name": "Alex Brown",
+          "attributes": {
+            "age": "36",
+            "role": "Lead Engineer"
+          }
+        },
+        {
+          "name": "Sophia Green",
+          "attributes": {
+            "age": "29",
+            "role": "Software Engineer"
+          }
+        },
+        {
+          "name": "Liam Martinez",
+          "attributes": {
+            "age": "32",
+            "role": "Cybersecurity Analyst"
+          },
+          "children": [
+            {
+              "name": "Emily Smith",
+              "attributes": {
+                "age": "38",
+                "role": "Finance Manager"
+              }
+            },
+            {
+              "name": "John Doe",
+              "attributes": {
+                "age": "35",
+                "role": "Accountant"
+              },
+              "children": [
+                {
+                  "name": "Emily Smith",
+                  "attributes": {
+                    "age": "38",
+                    "role": "Finance Manager"
+                  }
+                },
+                {
+                  "name": "John Doe",
+                  "attributes": {
+                    "age": "35",
+                    "role": "Accountant"
+                  }
+                },
+                {
+                  "name": "Sarah Johnson",
+                  "attributes": {
+                    "age": "29",
+                    "role": "Financial Analyst"
+                  }
+                },
+                {
+                  "name": "Kevin Wilson",
+                  "attributes": {
+                    "age": "41",
+                    "role": "Investment Specialist"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Sarah Johnson",
+              "attributes": {
+                "age": "29",
+                "role": "Financial Analyst"
+              },
+              "children": [
+                {
+                  "name": "Emily Smith",
+                  "attributes": {
+                    "age": "38",
+                    "role": "Finance Manager"
+                  },
+                  "children": [
+                    {
+                      "name": "Emily Smith",
+                      "attributes": {
+                        "age": "38",
+                        "role": "Finance Manager"
+                      },
+                      "children": [
+                        {
+                          "name": "Emily Smith",
+                          "attributes": {
+                            "age": "38",
+                            "role": "Finance Manager"
+                          }
+                        },
+                        {
+                          "name": "John Doe",
+                          "attributes": {
+                            "age": "35",
+                            "role": "Accountant"
+                          }
+                        },
+                        {
+                          "name": "Sarah Johnson",
+                          "attributes": {
+                            "age": "29",
+                            "role": "Financial Analyst"
+                          }
+                        },
+                        {
+                          "name": "Kevin Wilson",
+                          "attributes": {
+                            "age": "41",
+                            "role": "Investment Specialist"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "name": "John Doe",
+                      "attributes": {
+                        "age": "35",
+                        "role": "Accountant"
+                      }
+                    },
+                    {
+                      "name": "Sarah Johnson",
+                      "attributes": {
+                        "age": "29",
+                        "role": "Financial Analyst"
+                      }
+                    },
+                    {
+                      "name": "Kevin Wilson",
+                      "attributes": {
+                        "age": "41",
+                        "role": "Investment Specialist"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "John Doe",
+                  "attributes": {
+                    "age": "35",
+                    "role": "Accountant"
+                  },
+                  "children": [
+                    {
+                      "name": "Emily Smith",
+                      "attributes": {
+                        "age": "38",
+                        "role": "Finance Manager"
+                      }
+                    },
+                    {
+                      "name": "John Doe",
+                      "attributes": {
+                        "age": "35",
+                        "role": "Accountant"
+                      }
+                    },
+                    {
+                      "name": "Sarah Johnson",
+                      "attributes": {
+                        "age": "29",
+                        "role": "Financial Analyst"
+                      }
+                    },
+                    {
+                      "name": "Kevin Wilson",
+                      "attributes": {
+                        "age": "41",
+                        "role": "Investment Specialist"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "name": "Sarah Johnson",
+                  "attributes": {
+                    "age": "29",
+                    "role": "Financial Analyst"
+                  }
+                },
+                {
+                  "name": "Kevin Wilson",
+                  "attributes": {
+                    "age": "41",
+                    "role": "Investment Specialist"
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Kevin Wilson",
+              "attributes": {
+                "age": "41",
+                "role": "Investment Specialist"
+              }
+            }
+          ]
+        },
+        {
+          "name": "Olivia White",
+          "attributes": {
+            "age": "27",
+            "role": "UI/UX Designer"
+          }
+        },
+        {
+          "name": "Ethan Taylor",
+          "attributes": {
+            "age": "30",
+            "role": "Database Administrator"
+          }
+        }
+      ]
+    },
+    {
+      "name": "Roger Rose (COO)",
+      "attributes": {
+        "age": "40",
+        "department": "Operations"
+      },
+      "children": [
+        {
+          "name": "Michael Scott",
+          "attributes": {
+            "age": "50",
+            "role": "Operations Manager"
+          }
+        },
+        {
+          "name": "Rachel Adams",
+          "attributes": {
+            "age": "33",
+            "role": "Logistics Coordinator"
+          }
+        },
+        {
+          "name": "David Kim",
+          "attributes": {
+            "age": "39",
+            "role": "Supply Chain Manager"
+          }
+        },
+        {
+          "name": "Emma Clark",
+          "attributes": {
+            "age": "28",
+            "role": "Customer Support Lead"
+          }
+        },
+        {
+          "name": "Daniel Rodriguez",
+          "attributes": {
+            "age": "31",
+            "role": "Warehouse Supervisor"
+          }
+        }
+      ]
+    }
+  ]
+}
