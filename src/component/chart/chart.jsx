@@ -26,6 +26,10 @@ const renderCustomNode = ({ nodeDatum, toggleNode }) => {
         strokeWidth={0}
         rx="10"
         ry="10"
+        style={{
+          transition: "opacity 0.5s ease-in-out",
+          opacity: nodeDatum.__rd3t.collapsed ? 0.80 : 1,
+        }}
       />
 
       {/* Node Name */}
@@ -36,6 +40,10 @@ const renderCustomNode = ({ nodeDatum, toggleNode }) => {
         fontSize="13"
         fontWeight="300"
         fill="#333"
+        style={{
+          transition: "opacity 0.5s ease-in-out",
+          opacity: nodeDatum.__rd3t.collapsed ? 0.85 : 1,
+        }}
       >
         {nodeDatum.name}
       </text>
@@ -114,7 +122,7 @@ export default function OrgChartTree({ data }) {
         translate={translate}
         nodeSize={nodeSize}
         separation={separation}
-        transitionDuration="1000"
+        transitionDuration={3000}
         pathFunc="step"
         rootNodeClassName="node__root"
         branchNodeClassName="node__branch"
