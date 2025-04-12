@@ -98,14 +98,6 @@ const renderCustomNode = ({ nodeDatum, toggleNode }) => {
 };
 
 
-
-
-// Here we're using `renderCustomNodeElement` render a component that uses
-// both SVG and HTML tags side-by-side.
-// This is made possible by `foreignObject`, which wraps the HTML tags to
-// allow for them to be injected into the SVG namespace.
-
-
 export default function OrgChartTree({ data }) {
   const [translate, containerRef] = useCenteredTree(); // Auto-center tree
 
