@@ -9,64 +9,93 @@ const containerStyles = {
   background: "#eee"
 };
 
-const renderCustomNode = ({ nodeDatum, toggleNode }) => (
-  <g onClick={toggleNode} style={{ cursor: "pointer" }}> {/* 👈 Enable expand/collapse */}
-    {/* Rectangle Shape */}
-    <rect
-      width="180"
-      height="80"
-      x="-90"
-      y="-40"
-      fill="#ffffff"
-      stroke="#2F80ED"
-      strokeWidth={0}
-      rx="10"
-      ry="10"
-    />
+const renderCustomNode = ({ nodeDatum, toggleNode }) => {
+  const childCount =
+    (nodeDatum.children?.length || 0) + (nodeDatum._children?.length || 0);
 
-    {/* Node Name Text */}
-    <text
-      x="0"
-      y="-10"
-      textAnchor="middle"
-      fontSize="13"
-      fontWeight="300"
-      fill="#333"
-    >
-      {nodeDatum.name}
-    </text>
+  return (
+    <g onClick={toggleNode} style={{ cursor: "pointer" }}>
+      {/* Main Node Rect */}
+      <rect
+        width="180"
+        height="80"
+        x="-90"
+        y="-40"
+        fill="#AFDC8F"
+        stroke="#2F80ED"
+        strokeWidth={0}
+        rx="10"
+        ry="10"
+      />
 
-    {/* Expand/Collapse Icon (Moved Below) */}
-    {nodeDatum.children && (
+      {/* Node Name */}
       <text
         x="0"
-        y="45"  // Increased Y position to avoid overlap
+        y="-10"
         textAnchor="middle"
-        fontSize="14"
-        fill="#2F80ED"
-        fontWeight="600"
-        strokeWidth={0.5}
+        fontSize="13"
+        fontWeight="300"
+        fill="#333"
       >
-        {nodeDatum.__rd3t.collapsed ? "➕ " : "➖ "}
+        {nodeDatum.name}
       </text>
-    )}
 
-    {/* Node Attributes */}
-    {nodeDatum.attributes &&
-      Object.entries(nodeDatum.attributes).map(([key, value], i) => (
+      {/* Child Count Rect (only if children exist) */}
+      {childCount > 0 && (
+        <>
+          <rect
+            width="40"
+            height="20"
+            x="-20"
+            y="5"
+            fill="#2F80ED"
+            rx="5"
+            ry="5"
+          />
+          <text
+            x="0"
+            y="19"
+            textAnchor="middle"
+            fontSize="12"
+            fill="#fff"
+            fontWeight="middle"
+          >
+            {childCount}
+          </text>
+        </>
+      )}
+
+      {/* Expand/Collapse Icon */}
+      {nodeDatum.children && (
         <text
-          key={key}
           x="0"
-          y={10 + i * 15}
+          y="45"
           textAnchor="middle"
-          fontSize="12"
-          fill="#666"
+          fontSize="14"
+          fill="#2F80ED"
+          fontWeight="600"
         >
-          {`${key}: ${value}`}
+          {nodeDatum.__rd3t.collapsed ? "➕" : "➖"}
         </text>
-      ))}
-  </g>
-);
+      )}
+
+      {/* Node Attributes */}
+      {/* {nodeDatum.attributes &&
+        Object.entries(nodeDatum.attributes).map(([key, value], i) => (
+          <text
+            key={key}
+            x="0"
+            y={60 + i * 15}
+            textAnchor="middle"
+            fontSize="12"
+            fill="#666"
+          >
+            {`${key}: ${value}`}
+          </text>
+        ))} */}
+    </g>
+  );
+};
 
 
 
@@ -77,7 +106,7 @@ const renderCustomNode = ({ nodeDatum, toggleNode }) => (
 // allow for them to be injected into the SVG namespace.
 
 
-export default function OrgChartTree({data}) {
+export default function OrgChartTree({ data }) {
   const [translate, containerRef] = useCenteredTree(); // Auto-center tree
 
   // Reduce node size for better fit
