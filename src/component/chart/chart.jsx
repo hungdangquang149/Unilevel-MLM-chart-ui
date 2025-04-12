@@ -19,7 +19,7 @@ const renderCustomNode = ({ nodeDatum, toggleNode }) => (
       y="-40"
       fill="#ffffff"
       stroke="#2F80ED"
-      strokeWidth="2"
+      strokeWidth={0}
       rx="10"
       ry="10"
     />
@@ -45,6 +45,7 @@ const renderCustomNode = ({ nodeDatum, toggleNode }) => (
         fontSize="14"
         fill="#2F80ED"
         fontWeight="600"
+        strokeWidth={0.5}
       >
         {nodeDatum.__rd3t.collapsed ? "➕ " : "➖ "}
       </text>
